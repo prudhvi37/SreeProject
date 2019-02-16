@@ -10,7 +10,6 @@
 }
 body{
   font-family: 'Poiret One', cursive;
-  background-color: gray;
 }
 
 /* Navigation bar */
@@ -23,6 +22,7 @@ body{
   position: sticky;
   top: 0;
   transition: 0.5s;
+  z-index: 10;
 }
 #nav-items{
   display: flex;
@@ -150,18 +150,33 @@ body{
 
 
 /* About Me section */
-
+#aboutmecontainer{
+  margin: 50px 0;
+}
 #aboutme{
-  display: flex;
-  max-width: 82%;
+  background-color: coral;
+  margin: 0 auto;
+  transform: skew(20deg);
+  max-width: 85%;  
+  display:flex;
   align-items: center;
+  height: 306px;
+  color: white;
 }
 
+#aboutmeimage img{
+  width: 227px;
+  height: 217px;
+  border-radius: 50%;
+  /* padding: 29px; */
+  margin: 16px 21px;
+  transform:skew(-20deg);
+}
 
-
-
-
-
+#aboutme-content > h1,p{
+  transform:skew(-20deg);
+  align-items: center;
+}
 
 
 

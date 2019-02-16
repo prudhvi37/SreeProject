@@ -1,0 +1,264 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color: rgba(255, 8, 49, 0.657);
+  --smallNavigation-display : block;
+  --smallNavigation-text-align : center;
+}
+body{
+  font-family: 'Poiret One', cursive;
+  background-color: gray;
+}
+
+/* Navigation bar */
+
+#nav-container{
+  display: flex;
+  align-items: center;
+  background-color: rgba(225,225,225,0.3);
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  transition: 0.5s;
+}
+#nav-items{
+  display: flex;
+}
+
+#nav-items > li{
+  list-style: none;
+  padding: 0.75rem;
+}
+
+#nav-items > li a{
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+}
+#social-icons{
+  display: flex;
+  padding: 0.75rem;
+}
+#social-icons > li{
+  list-style: none;
+  padding: 0.75rem;
+}
+#social-icons > li > a{
+  color:black;
+}
+.fa{
+  border-radius: 50%;
+  background-color: rgba(225,225,225,0.9);
+  padding: 16px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+#nav-container > h1{
+  color: var(--primary-color);
+}
+
+#nav-container > h1 > span{
+  font-size: 15px;
+}
+
+/* Hamburger */
+  #hamburger{
+    display: none;
+  }
+  #hamburger > a > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  #side-nav{
+    display: none;
+    background-color: rgba(225,225,225,0.7);
+    width: 30vw;
+    height: 41vh;
+    align-items: center;
+    border-radius: 18px 0px 0px 18px; 
+    position: fixed;
+    right: 0;
+    justify-content: center;
+  }
+  #side-nav >  #closeNav{
+    color: black;
+    position: absolute;
+    font-size: 93px;
+    top: -36px;
+    right: 15px;
+  }
+
+  #side-nav > a{
+    padding: 10px 0px;
+    text-decoration: none;
+  }
+
+/* Cover Page */
+
+#coverPage{
+  
+  height: 100vh;
+  color: white;
+  margin-top: -106px; 
+} 
+#coverPage .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-clip: rgba(2,225,225,0.7);
+}
+
+#coverPage:before{
+  content:'';
+  background: url('../assests/vfx.jpg') no-repeat center center/cover;
+  opacity: 0.9;
+  position: absolute; 
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+
+#coverPage h1,h2,p{
+  padding-bottom: 0.9rem;
+} 
+
+.container > button{
+    background: rgb(66, 184, 221);
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border: white;
+    width: 99px;
+    height: 42px;
+    font-weight: 700;
+}
+
+
+/* About Me section */
+
+#aboutme{
+  display: flex;
+  max-width: 82%;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Smart Mobile Devices */
+@media (max-width:500px){
+  #nav-container{
+    height: 78px;
+  }
+  #nav-items,  #social-icons{
+    display: none;
+  }
+  #hamburger{
+    display: flex;
+  }
+}
+
+
+
+
+/* Tablet */
+
+@media (min-width:501px) and (max-width:768px){
+  #nav-container{
+    height: 78px;
+  }
+  #nav-items,  #social-icons{
+    display: none;
+  }
+  #hamburger{
+    display: flex;
+  }
+}
+
+
+
+/* Tablet */
+
+@media (min-width:769px) and (max-width:1200px){
+  
+}
+
+
+
+/* WideScreen */
+
+
+@media (min-width:1201px){
+  
+}
+
+
+
+
+
+/* 
+
+#nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1rem;
+  font-family: 'Patrick+Hand', Roboto;
+}
+#nav-container > h1{
+  color: var(--primary-color);
+}
+h1 > span{
+  font-size: 13px;
+  color: pink;
+}
+#nav-contain > ul{
+  display: flex;
+  list-style: none;
+}
+#nav-contain > ul > li{
+  padding: 0.75rem;
+}
+a{
+  text-decoration: none;
+  color:black;
+  font-weight: bolder;
+}
+
+
+/* 
+/* .fa{
+  border-radius: 50%;
+  background-color: rgba(225,225,225,0.4);
+  padding: 16px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+} */

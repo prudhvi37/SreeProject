@@ -183,7 +183,7 @@ body{
 
 
 /* Smart Mobile Devices */
-@media (max-width:500px){
+@media only screen and (max-width:500px){
   #nav-container{
     height: 78px;
   }
@@ -192,6 +192,24 @@ body{
   }
   #hamburger{
     display: flex;
+  }
+  #aboutme{
+    flex-direction: column;
+    transform: none;
+    max-width: 80%;
+    border-radius: 4%;
+    height: 100%;
+  }
+  #aboutmeimage img{
+    transform: none;
+    height: 125px;
+    width: 124px;
+  }
+  #aboutme-content{
+    padding: 18px;
+  }
+  #aboutme-content > h1,p{
+    transform: none;
   }
 }
 
@@ -209,6 +227,24 @@ body{
   }
   #hamburger{
     display: flex;
+  }
+  #aboutme{
+    flex-direction: column;
+    transform: none;
+    max-width: 80%;
+    border-radius: 4%;
+    height: 100%;
+  }
+  #aboutmeimage img{
+    transform: none;
+    height: 125px;
+    width: 124px;
+  }
+  #aboutme-content{
+    padding: 18px;
+  }
+  #aboutme-content > h1,p{
+    transform: none;
   }
 }
 

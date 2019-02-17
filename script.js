@@ -1,3 +1,4 @@
+// Side Menu Navigator
 function openNav() {
   if(document.getElementById('side-nav').style.display === "flex"){
   document.getElementById('side-nav').style.display = "none";
@@ -7,7 +8,7 @@ function openNav() {
   }
 }
 
-
+// Change Navigation color on scroll
 function Scroll(){
   var scrollPage = window.pageYOffset;
   if(scrollPage > 100){
@@ -18,3 +19,10 @@ function Scroll(){
 
 }
 window.addEventListener("scroll", Scroll);
+
+
+// Footer Date
+
+const date = new Date().getUTCFullYear();
+document.getElementById('date').innerHTML = date;
+

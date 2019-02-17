@@ -7,9 +7,17 @@
   --primary-color: rgba(255, 8, 49, 0.657);
   --smallNavigation-display : block;
   --smallNavigation-text-align : center;
+  --buttoncolors-secondary :  rgb(66, 184, 221);
 }
 body{
   font-family: 'Poiret One', cursive;
+  overflow-x: hidden;
+}
+
+header{
+  text-align: center;
+  color: black;
+  font-size: 35px;
 }
 
 /* Navigation bar */
@@ -62,6 +70,7 @@ body{
 
 #nav-container > h1{
   color: var(--primary-color);
+  font-size: 30px;
 }
 
 #nav-container > h1 > span{
@@ -74,8 +83,8 @@ body{
   }
   #hamburger > a > div {
     width: 35px;
-    height: 5px;
-    background-color: black;
+    height: 3px;
+    background-color: white;
     margin: 6px 0;
   }
   #side-nav{
@@ -105,22 +114,27 @@ body{
 /* Cover Page */
 
 #coverPage{
-  
+  background: url('../assests/vfx.jpg') no-repeat center center/cover;
   height: 100vh;
   color: white;
-  margin-top: -106px; 
+  margin-top: -106px;
+  height: 100vh;
 } 
 #coverPage .container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-clip: rgba(2,225,225,0.7);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absoulte;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
 }
 
-#coverPage:before{
+/* #coverPage:before{
   content:'';
   background: url('../assests/vfx.jpg') no-repeat center center/cover;
   opacity: 0.9;
@@ -130,7 +144,7 @@ body{
   width: 100vw;
   height: 100vh;
   z-index: -1;
-}
+} */
 
 
 #coverPage h1,h2,p{
@@ -138,7 +152,7 @@ body{
 } 
 
 .container > button{
-    background: rgb(66, 184, 221);
+    background: var(--buttoncolors-secondary);
     color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -178,6 +192,37 @@ body{
   align-items: center;
 }
 
+/* Footer */
+
+footer {
+  height: 136px;
+  background-color: #fbe4c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+footer > #footercontact > span > button{
+  background-color: var(--buttoncolors-secondary);
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border: white;
+  width: 99px;
+  height: 42px;
+  font-weight: 700;
+}
+footer > #footercontact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > #footerend{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

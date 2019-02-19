@@ -1,0 +1,114 @@
+body{
+  font-family: 'Poiret One', cursive !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#nav-container > #social-icons {
+  padding: 0px;
+}
+#social-icons > li > a{
+  font-size: 18px;
+}
+
+
+.contactform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 59px 92px;
+}
+
+#contactcoverPage{
+  background: url("./assests/contactbg.jpg") no-repeat center center/cover;
+  height: 50vh;
+  color: white;
+  margin-top: -106px;
+}
+
+form {
+  background-color: rgb(63, 191, 156);
+  max-width: 70%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  flex: 1;
+}
+
+form > h1,
+.scheduler > h1{  
+  font-size: 18px;
+  color: black;
+}
+
+form > h1 > span{  
+  color: white;
+}
+
+#form-group{
+  margin: 10px 0px;
+}
+
+#form-group input,
+#form-group textarea
+{
+  font-family: 'Poiret One', cursive;
+  width: 70%;
+  height: 30px;
+}
+#form-group textarea
+{
+ height: 200px; 
+}
+
+.scheduler{
+  border: 2px solid darkgray;
+  height: 366px;
+  max-width: 40%;
+  text-align: center;
+}
+.scheduler img{
+  max-width: 25%;
+  border: 2px solid pink;
+}
+.scheduler input{
+  padding: 13px;
+  width: 35%;
+}
+#datetimepicker > .add-on{
+  padding: 3px 7px 23px 7px;
+}
+
+
+
+@media only screen and (max-width:500px){
+  .contactform{
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 0px;
+  }
+  .contactform form {
+    width: 80%; 
+  }
+  .contactform .scheduler{
+    max-width: 70%;
+  }
+}
+
+
+
+@media (min-width:501px) and (max-width:768px){
+  .contactform{
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 0px;
+  }
+  .contactform form {
+    width: 80%; 
+  }
+  .contactform .scheduler{
+    max-width: 70%;
+  }
+}

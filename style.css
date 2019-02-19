@@ -31,6 +31,7 @@ header{
   top: 0;
   transition: 0.5s;
   z-index: 10;
+  max-width: 100%;
 }
 #nav-items{
   display: flex;
@@ -69,12 +70,13 @@ header{
 }
 
 #nav-container > h1{
-  color: var(--primary-color);
+  color: #35bdf6;
   font-size: 30px;
 }
 
 #nav-container > h1 > span{
-  font-size: 15px;
+  font-size: 30px;
+  color:white;  
 }
 
 /* Hamburger */
@@ -91,12 +93,13 @@ header{
     display: none;
     background-color: rgba(225,225,225,0.7);
     width: 30vw;
-    height: 41vh;
+    height: 220px;
     align-items: center;
     border-radius: 18px 0px 0px 18px; 
     position: fixed;
     right: 0;
     justify-content: center;
+    
   }
   #side-nav >  #closeNav{
     color: black;
@@ -109,6 +112,8 @@ header{
   #side-nav > a{
     padding: 10px 0px;
     text-decoration: none;
+    color: black;
+    font-size: 15px;
   }
 
 /* Cover Page */
@@ -121,7 +126,7 @@ header{
   height: 100vh;
 } 
 #coverPage .container{
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -196,7 +201,7 @@ header{
 
 footer {
   height: 136px;
-  background-color: #fbe4c9;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,7 +226,6 @@ footer > #footercontact {
 footer > #footerend{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 
@@ -256,6 +260,10 @@ footer > #footerend{
   #aboutme-content > h1,p{
     transform: none;
   }
+  #footercontact{
+    font-size: 10px;
+  }
+ 
 }
 
 
@@ -291,15 +299,31 @@ footer > #footerend{
   #aboutme-content > h1,p{
     transform: none;
   }
+  #footercontact{
+    font-size: 10px;
+  }
+  
 }
 
+@media (min-width:769px) and (max-width:992px){
+  #nav-container{
+    height: 78px;
+  }
+  #nav-items,  #social-icons{
+    display: none;
+  }
+  #hamburger{
+    display: flex;
+  }
+}
 
 
 /* Tablet */
 
 @media (min-width:769px) and (max-width:1200px){
-  
+
 }
+
 
 
 

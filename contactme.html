@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sree | Contact Me</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Inconsolata|Major+Mono+Display|Montserrat|PT+Sans+Narrow|Poiret+One|Rajdhani|Roboto|Amaranth|Amatic+SC|Economica|Homemade+Apple|Open+Sans+Condensed:300|PT+Sans|Patrick+Hand|Roboto|Shadows+Into+Light}" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen"
+    href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+    
+
+  <link href="style.css" rel="stylesheet">
+  <link href="contact.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="nav-container">
+      <h1>Sree&nbsp;<span>Surapuraju</span></h1>
+      <ul id="nav-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="contactme.html">Contact Me</a></li>
+      </ul>
+      <ul id="social-icons">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+      </ul>
+      <div id="hamburger" onclick="openNav()">
+        <a href="#">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>                  
+      </div>
+  </nav>
+  <div id="side-nav">
+      <a href="#">Home</a>
+      <a href="#">About Me</a>
+      <a href="#">Blog</a>
+      <a href="#">Services</a>
+      <a href="#">Contact Me</a>
+  </div>     
+  <!-- Cover Page -->
+  <div id="contactcoverPage">
+
+  </div>
+  <!-- Contact Form -->    
+  <div class="contactform">
+    <form>
+      <h1>Contact <span> Me </span></h1>
+      <div id="form-group" class="form-group">
+        <input type="text" id="name1" name="name" placeholder="Name" keyuop>
+      </div>
+      <div id="form-group" class="form-group">
+        <input type="email" id="email1" name="email" placeholder="Email">
+      </div>
+      <div id="form-group" class="form-group">
+        <input type="tel" id="tel1" name="tel" placeholder="Contact Number">
+      </div>         
+      <div id="form-group" class="form-group">
+        <textarea placeholder="Message" id="textarea"></textarea>
+      </div>          
+      <button type="submit" id="submit1" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-danger">Reset</button>
+    </form> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="scheduler">
+        <h1>Or Give me a schedule,I'll contact you
+          <span><img src="./assests/profileavatar.jpg"></span>
+        </h1>  
+        <input type="text" id="name1" placeholder="Please enter your name">
+        <input type="tel" id="tel" placeholder="Please enter your contact number">
+        <div id="datetimepicker" class="input-append">
+          <input data-format="MM/dd/yyyy HH:mm:ss PP" type="text" id="dateTime" placeholder="Click on the calender icon to select the date and time">
+          <span class="add-on">
+            <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+              </i>
+          </span>
+        </div>
+        <button type="submit" id="submit2" class="btn btn-success">Schedule</button>
+    </div>
+  </div>
+
+  <footer>
+      <div id="footercontact" class="footercontact">
+          <h1>Are you Ready to Offer me a chance</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span><button>Contact Me</button></span>
+      </div>   
+      <div id="footerend" class="footerend">
+        <p id="date"></p>&nbsp;&nbsp;<span> |  Copyright Sree Surapuraju</span>
+      </div>
+    </footer>
+     
+
+
+<!-- Utils for dateTime picker -->
+
+  <script type="text/javascript"
+   src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+  </script> 
+  <script type="text/javascript"
+   src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+  </script>
+  <script type="text/javascript"
+   src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+  </script>
+  <script type="text/javascript"
+   src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+  </script>
+<script type="text/javascript">
+  $(function() {
+    var nowDate = new Date();
+    var today = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
+    $('#datetimepicker').datetimepicker({
+      language: 'en',
+      pick12HourFormat: true,
+      startDate: today
+    });
+  });
+</script>
+
+
+
+
+<script>
+
+  //  Script to get the date and time 
+  document.getElementById('submit2').addEventListener('click',(e) => {
+    var time = document.getElementById('dateTime').value;
+    console.log('submitted');
+    console.log(`You have got a schedule to call at ${time}`);
+    e.preventDefault();
+  })
+
+
+  // disable buttons if input fields empty in contact page
+  var submit1 = document.getElementById('submit1');
+  var name = document.getElementById('name1').value;
+  if(name === ''){
+    submit1.disabled = true;
+  }else{
+    submit1.disabled = false;
+  }
+
+
+
+
+</script>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

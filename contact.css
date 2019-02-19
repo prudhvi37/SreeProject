@@ -5,11 +5,18 @@ body{
   padding: 0 !important;
 }
 
-#nav-container > #social-icons {
-  padding: 0px;
-}
-#social-icons > li > a{
-  font-size: 18px;
+.button-submit,
+.button-reset,
+.button-schedule
+{
+  background-color: #5bc0de;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border: white;
+  width: 99px;
+  height: 35px;
+  font-weight: 700;
 }
 
 
@@ -73,15 +80,17 @@ form > h1 > span{
   max-width: 25%;
   border: 2px solid pink;
 }
-.scheduler input{
-  padding: 13px;
-  /* width: 35%; */
-}
-#datetimepicker > .add-on{
-  padding: 3px 7px 23px 7px;
+#scheduleinputs input{
+  font-family: 'Poiret One', cursive !important;
 }
 
+.button-reset{
+  background-color: #d9534f;
+ }
 
+.button-schedule{
+  background-color: #5cb85c;
+}
 
 @media only screen and (max-width:500px){
   .contactform{

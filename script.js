@@ -10,6 +10,10 @@ function openNav() {
   }
 }
 
+
+
+
+
 // Change Navigation color on scroll
 function Scroll(){
   var scrollPage = window.pageYOffset;

@@ -78,13 +78,21 @@
         </h1>  
         <input type="text" id="name1" placeholder="Please enter your name">
         <input type="tel" id="tel" placeholder="Please enter your contact number">
-        <div id="datetimepicker" class="input-append">
+        Date: <input type="date" name="field1" id="field1" />
+        Time: <input type="time" name="field5" id="field5" /><br /><br />
+        <!-- <input type="datetime" name="field3" id="field3" /> -->
+        <!-- <input id="party" type="datetime-local" name="partydate"> -->
+        
+        <label for="party">Enter a date and time for your party booking:</label>
+    <input id="party" type="datetime-local" name="partydate">
+
+        <!-- <div id="datetimepicker" class="input-append">
           <input data-format="MM/dd/yyyy HH:mm:ss PP" type="text" id="dateTime" placeholder="Click on the calender icon to select the date and time">
           <span class="add-on">
             <i data-time-icon="icon-time" data-date-icon="icon-calendar">
               </i>
           </span>
-        </div>
+        </div> -->
         <button type="submit" id="submit2" class="btn btn-success">Schedule</button>
     </div>
   </div>
@@ -97,7 +105,7 @@
       <div id="footerend" class="footerend">
         <p id="date"></p>&nbsp;&nbsp;<span> |  Copyright Sree Surapuraju</span>
       </div>
-    </footer>
+  </footer>
      
 
 

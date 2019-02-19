@@ -75,7 +75,7 @@ form > h1 > span{
 }
 .scheduler input{
   padding: 13px;
-  width: 35%;
+  /* width: 35%; */
 }
 #datetimepicker > .add-on{
   padding: 3px 7px 23px 7px;

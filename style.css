@@ -18,6 +18,7 @@ header{
   text-align: center;
   color: black;
   font-size: 35px;
+  margin:100px 0;
 }
 
 /* Navigation bar */
@@ -156,7 +157,7 @@ header{
   padding-bottom: 0.9rem;
 } 
 
-.container > button{
+#coverPage > .container > button{
     background: var(--buttoncolors-secondary);
     color: white;
     border-radius: 4px;
@@ -166,6 +167,7 @@ header{
     height: 42px;
     font-weight: 700;
 }
+
 
 
 /* About Me section */
@@ -192,10 +194,54 @@ header{
   transform:skew(-20deg);
 }
 
-#aboutme-content > h1,p{
+#aboutme-content > p{
   transform:skew(-20deg);
   align-items: center;
 }
+
+#aboutme-content > h1{
+  transform:skew(-20deg);
+  align-items: center;
+}
+
+/* Instagram */
+
+#instagram{
+  display: flex;
+  justify-content: center;
+  margin: 42px 0px;
+}
+
+#instagram li{
+  list-style: none;
+}
+
+#instagram img{
+  padding: 0px 0px;
+  width: 71%;
+  border: 2px solid grey;
+}
+
+/* Testimonal */
+
+
+#testimonal-head{
+  display: flex;
+  margin: 100px 0;
+  justify-content: space-evenly;
+}
+#testimonal{
+  max-width: 40%;
+  text-align: center;
+}
+#testimonal img{
+  border-radius: 50%;
+  max-width: 32%;
+}
+
+
+
+
 
 /* Footer */
 
@@ -260,6 +306,18 @@ footer > #footerend{
   #aboutme-content > h1,p{
     transform: none;
   }
+  
+  #testimonal-head{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #testimonal{
+    max-width: 75%;
+    margin-bottom: 29px;
+  }
+
+
   #footercontact{
     font-size: 10px;
   }
@@ -299,9 +357,17 @@ footer > #footerend{
   #aboutme-content > h1,p{
     transform: none;
   }
+  #testimonal-head{
+    flex-direction: column;
+    align-items: center;
+  }
+  #testimonal{
+    max-width: 75%;
+    margin-bottom: 29px;
+  }
   #footercontact{
     font-size: 10px;
-  }  
+  }    
 }
 
 @media (min-width:769px) and (max-width:992px){

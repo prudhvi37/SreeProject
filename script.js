@@ -57,3 +57,21 @@ window.mishaProcessResult = function( dataFromInsta ) {
  
 scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/recent?access_token=' + token + '&count=' + num_photos + '&callback=mishaProcessResult' );
 document.body.appendChild( scrElement );
+
+
+//Smooth Scrolling
+
+$('#nav-items a, .container button a').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 150
+      },
+      800
+    );
+  }
+});

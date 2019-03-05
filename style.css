@@ -90,6 +90,8 @@ header{
     background-color: white;
     margin: 6px 0;
   }
+
+  
   #side-nav{
     display: none;
     background-color: rgba(225,225,225,0.7);
@@ -116,7 +118,14 @@ header{
     color: black;
     font-size: 15px;
   }
+  
+ .changebar{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }  
 
+
+  
 /* Cover Page */
 
 #coverPage{
@@ -216,11 +225,7 @@ header{
   list-style: none;
 }
 
-#instagram img{
-  padding: 0px 0px;
-  width: 71%;
-  border: 2px solid grey;
-}
+
 
 /* Testimonal */
 

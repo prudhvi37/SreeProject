@@ -34,23 +34,23 @@ body{
   margin-top: -106px;
 }
 
-form {
+
+form#form-1{
   background-color: rgb(63, 191, 156);
-  max-width: 70%;
+  width: 70%;
   padding: 20px;
   text-align: center;
   color: white;
-  border-radius: 10px;
-  flex: 1;
+  border-radius: 10px
 }
 
-form > h1,
+form#form-1 > h1,
 .scheduler > h1{  
   font-size: 18px;
   color: black;
 }
 
-form > h1 > span{  
+form#form-1 > h1 > span{  
   color: white;
 }
 
@@ -68,20 +68,29 @@ form > h1 > span{
 #form-group textarea
 {
  height: 200px; 
+} 
+
+/* Scheduler */
+
+form#form-2{
+  max-width: 36%;
 }
 
-.scheduler{
+form#form-2 > .scheduler{
   border: 2px solid darkgray;
-  height: 366px;
-  max-width: 40%;
+  padding: 29px 0;
+  max-width: 100%;
   text-align: center;
 }
-.scheduler img{
+form#form-2 > .scheduler img{
   max-width: 25%;
   border: 2px solid pink;
 }
 #scheduleinputs input{
   font-family: 'Poiret One', cursive !important;
+  width: 35%;
+  height: 30px;
+  margin: 15px;
 }
 
 .button-reset{
@@ -92,14 +101,18 @@ form > h1 > span{
   background-color: #5cb85c;
 }
 
+
 @media only screen and (max-width:500px){
   .contactform{
     flex-direction: column;
     width: 100%;
     margin: 40px 0px;
   }
-  .contactform form {
+  .contactform form#form-1 {
     width: 80%; 
+  }
+  form#form-2{
+    max-width: 100%;
   }
   .contactform .scheduler{
     max-width: 70%;
@@ -117,7 +130,11 @@ form > h1 > span{
   .contactform form {
     width: 80%; 
   }
+  form#form-2{
+    max-width: 100%;
+  }
   .contactform .scheduler{
     max-width: 70%;
   }
 }
+
